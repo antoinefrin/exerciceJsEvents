@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="/Users/antoinefrin/TD-form/exercice_JS_Events/exercice9/css/exercice9.css">
+        <title>Exercice 9 JS events </title>
+    </head>
+    <body>
+
+        <!-- On se propose d’avoir une page web qui affiche le contenu suivant:
+                On affiche le message “Dépassement” en rouge si le nombre de caractères du texte dépasse les 100
+                ou que le nombre de mots dépasse les 10. -->
+        
+                <h5>Vous pouvez écrire un texte avec un nombre de caractères maximum de 100<br> 
+                    et/ou un nombre de mots ne dépassent pas 10.</h5><br>
+
+                <textarea id="message" name="message" rows="10" cols="60">Saisisez votre texte...</textarea><br>
+                <input type="submit" id="button" value="Envoyer" onclick="calcul()">
+                <div id="caractere">Vous avez tapé <span id="nombreCaractere">0</span> caractère(s).</div>
+                <div id="mot">Vous avez tapé <span id="nombreMot">0</span> mot(s).</div>
+                <p id="depassementCaractere"></p>
+                <p id="depassementMot"></p>
+                
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/Users/antoinefrin/TD-form/exercice_JS_Events/exercice9/js/exercice9.js"></script>
+        
+    </body>
+</html>

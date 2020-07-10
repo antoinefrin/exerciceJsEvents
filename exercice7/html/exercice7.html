@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="/Users/antoinefrin/TD-form/exercice_JS_Events/exercice7/css/exercice7.css">
+        <title>Exercice 7 JS events </title>
+    </head>
+    <body>
+        <!-- Créer une page HTML qui permet de récupérer les informations de l’utilisateur via un formulaire 
+                et les afficher dans une nouvelle page récapitulatif suite au submit du formulaire. -->
+        
+        <form id="formulaire" action="exercice7page2.html" method="GET">
+            <fieldset>
+                <legend>Inscription</legend>
+                    <ul id="listePuce">
+                        <li><label for="nom">Nom :</label><br>
+                            <input type="text" name="nom" id="nom" placeholder="Dumont" required /> <!-- onblur="afficherValeur(this)" -->
+                        </li>
+            
+                        <li><label for="prenom">Prénom :</label><br>
+                            <input type="text" name="prenom" id="prenom" placeholder="Pierre" required /> <!-- onblur="afficherValeur(this)" -->
+                        </li>
+                        <li><label for="mail">E-mail :</label><br>
+                            <input type="email" name="mail" id="mail" placeholder="example@gmail.com" pattern=".+@.+" required />
+                        </li>
+                    </ul>
+            </fieldset>
+        <input type="reset" name="reset" id="reset" onclick="">
+        <input type="submit" id="submit" value="Enregistré">
+
+        </form>
+        
+    </body>
+</html>

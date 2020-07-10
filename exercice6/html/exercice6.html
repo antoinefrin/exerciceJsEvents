@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="/Users/antoinefrin/TD-form/exercice_JS_Events/exercice6/css/exercice6.css">
+        <title>Exercice 6 JS events </title>
+    </head>
+    <body>
+        <!-- Ecrire une page web qui permet de récupérer les informations d’un utilisateur dans un tableau.
+                Ces informations sont saisies à partir d’un formulaire. -->
+        
+        <form id="formulaire" >
+            <fieldset>
+                <legend>Inscription</legend>
+                    <ul id="listePuce">
+                        <li><label for="nom">Nom :</label><br>
+                            <input type="text" name="nom" id="nom" placeholder="Dumont" required /> <!-- onblur="afficherValeur(this)" -->
+                        </li>
+            
+                        <li><label for="prenom">Prénom :</label><br>
+                            <input type="text" name="prenom" id="prenom" placeholder="Pierre" required /> <!-- onblur="afficherValeur(this)" -->
+                        </li>
+                        <li><label for="mail">E-mail :</label><br>
+                            <input type="email" name="mail" id="mail" placeholder="example@gmail.com" pattern=".+@.+" required />
+                        </li>
+                    </ul>
+            </fieldset>
+        <input type="reset" name="reset" id="reset" onclick="">    
+        </form>
+        
+        <input type="submit" id="submit" value="Enregistré" onclick="newClient()">
+        <!-- <button onclick="newClient()">Validé</button> -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/Users/antoinefrin/projet-web/exercice_JS_Events/exercice6/js/exercice6.js"></script>
+        
+    </body>
+</html>
